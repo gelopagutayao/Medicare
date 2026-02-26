@@ -8,7 +8,7 @@ const SignUp = () => {
   const navigate = useNavigate(); // initialize navigate
 
   return (
-    <div className="min-h-[60vh] bg-white mt-1 relative">
+    <div className="min-h-[90vh] bg-white mt-1 relative">
       <MedicalShapesBackground />
       <section className="relative bg-transparent pt-12 pb-4 z-10">
         <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-6 relative z-10">
