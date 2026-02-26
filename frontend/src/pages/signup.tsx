@@ -24,9 +24,9 @@ const SignUp = () => {
           {/* LEFT SIDE IMAGE */}
           <div className="relative w-full lg:w-1/2 flex justify-center lg:justify-end order-2 lg:order-1">
             <img
-              src="/hero1.png"
+              src="/doctor.png"
               alt="Doctor"
-              className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[500px]  object-contain"
+              className="w-68 h-68 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[500px]  object-contain"
             />
           </div>
 
