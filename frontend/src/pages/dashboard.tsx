@@ -1,12 +1,10 @@
-import { useState } from 'react'
 import Sidebar from '../components/sidebar'
-import { patients, doctors, appointments, recentActivity, stats, notifications } from '../data/mockData'
+import { patients, doctors, appointments, recentActivity, stats } from '../data/mockData'
 import { Users, Calendar, Clock, Stethoscope  } from 'lucide-react'
 import Dashboardheader from '../components/dashboardheader'
 import MedicalShapesBackground from '../components/MedicalShapesBackground'
 
 const dashboard = () => {
-  const [activeTab, setActiveTab] = useState('dashboard')
 
   return (
     <div className="flex min-h-screen bg-gray-50 relative">

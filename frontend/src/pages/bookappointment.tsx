@@ -1,18 +1,8 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Calendar, Clock, User, Phone, FileText, ArrowLeft } from 'lucide-react';
 import MedicalShapesBackground from '../components/MedicalShapesBackground';
 
 const BookAppointment = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    specialty: '',
-    date: '',
-    time: '',
-    notes: ''
-  });
-
   const specialties = [
     'General Physician',
     'Cardiologist',
