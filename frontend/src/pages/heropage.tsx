@@ -65,12 +65,7 @@ const Heropage = () => {
           </div>
         </div>
       </section>
-    <div className="bg-gray-300">
-    <div></div>
-
-    </div>
-
-    
+   
   </div>
   );
 };
