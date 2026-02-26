@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Star, ArrowRight } from "lucide-react";
 import stethoscope from '../assets/icons/stethoscope.png';
 import signature from '../assets/icons/signature.png';
@@ -30,13 +31,13 @@ const Heropage = () => {
             </p>
 
             <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="bg-[#09637E] text-white px-6 py-3 rounded-lg shadow-md transition-all duration-300 hover:shadow-[0_0_20px_rgba(9,99,126,0.6)]">
+              <Link to="/book-appointment" className="bg-[#09637E] text-white px-6 py-3 rounded-lg shadow-md transition-all duration-300 hover:shadow-[0_0_20px_rgba(9,99,126,0.6)]">
                 <img src={stethoscope} alt="Stethoscope" className="w-5 h-5 inline mr-2 brightness-0 invert" /> Book Appointment
-              </button>
+              </Link>
 
-              <button className="bg-[#09637E] text-white px-6 py-3 rounded-lg shadow-md transition-all duration-300 hover:shadow-[0_0_20px_rgba(9,99,126,0.6)]">
+              <Link to="/signup" className="bg-[#09637E] text-white px-6 py-3 rounded-lg shadow-md transition-all duration-300 hover:shadow-[0_0_20px_rgba(9,99,126,0.6)]">
                 <img src={signature} alt="Signature" className="w-5 h-5 inline mr-2 brightness-0 invert" /> Sign up
-              </button>
+              </Link>
             </div>
 
             <div className="mt-9.25 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
