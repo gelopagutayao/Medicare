@@ -9,7 +9,7 @@ const Footer = () => {
         {/* LEFT SECTION */}
         <div className="flex flex-col items-start gap-4">
           <div className="flex items-center gap-2">
-            <img src="/frontend/dist/LOGO.png" alt="Medicare Logo" className="w-10 h-10" />
+            <img src="/LOGO.png" alt="Medicare Logo" className="w-10 h-10" />
             <span className="text-2xl font-bold"><span className="text-[#09637E]">Medi</span>care.</span>
           </div>
           <p className="text-sm font-light">Expert care delivered to your home.</p>
