@@ -98,7 +98,9 @@ const SignUp = () => {
 
               {/* BUTTON */}
               <button
-                type="submit"
+                
+                type="button"
+                onClick={() => window.location.href = '/dashboard'}
                 className="w-full bg-[#09637E] text-white px-6 py-3 rounded-lg shadow-md transition-all duration-300 hover:shadow-[0_0_20px_rgba(9,99,126,0.6)]"
               >
                 Create Account
