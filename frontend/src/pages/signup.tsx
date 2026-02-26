@@ -22,16 +22,16 @@ const SignUp = () => {
           </Link>
 
           {/* LEFT SIDE IMAGE */}
-          <div className="relative w-full lg:w-1/2 flex justify-center ml-auto">
+          <div className="relative w-full lg:w-1/2 flex justify-center lg:justify-end order-2 lg:order-1">
             <img
               src="/hero1.png"
               alt="Doctor"
-              className="w-150 h-150 relative z-10 mr-47.5 mb-10"
+              className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[500px]  object-contain"
             />
           </div>
 
           {/* RIGHT SIDE FORM */}
-          <div className="w-full lg:w-1/2 text-center lg:text-left px-2.5 -mt-30">
+          <div className="w-full lg:w-1/2 text-center lg:text-left px-4 order-1 lg:order-2 lg:mt-0 mt-6">
             <h2 className="text-3xl font-bold text-gray-900">
               Create account
             </h2>
@@ -42,7 +42,7 @@ const SignUp = () => {
             <form className="mt-6 space-y-4 max-w-md mx-auto lg:mx-0">
               
               {/* NAME FIELDS */}
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <input
                   type="text"
                   placeholder="First Name"

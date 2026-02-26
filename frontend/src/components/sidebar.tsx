@@ -1,7 +1,11 @@
 import { Link, useLocation } from 'react-router-dom'
-import { LayoutDashboard, Users, Calendar, Stethoscope, Settings, LogOut, FileText, Activity } from 'lucide-react'
+import { LayoutDashboard, Users, Calendar, Stethoscope, Settings, LogOut, FileText, Activity, X } from 'lucide-react'
 
-const Sidebar = () => {
+interface SidebarProps {
+  onClose?: () => void
+}
+
+const Sidebar = ({ onClose }: SidebarProps) => {
   const location = useLocation()
   
   const menuItems = [
@@ -15,13 +19,18 @@ const Sidebar = () => {
   ]
 
   return (
-    <nav className="bg-[#09637E] text-white w-64 min-h-screen fixed left-0 top-0 flex flex-col">
+    <nav className="bg-[#09637E] text-white w-64 min-h-screen lg:flex flex-col">
       {/* Logo */}
-      <div className="p-6 border-t border-white/10">
+      <div className="p-6 border-t border-white/10 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
           <img src="/LOGO.png" alt="Medicare" className="w-8 h-8" />
           <span className="text-2xl font-bold"><span>Medi</span>care.</span>
         </Link>
+        {onClose && (
+          <button onClick={onClose} className="lg:hidden p-1">
+            <X className="w-6 h-6" />
+          </button>
+        )}
       </div>
 
       {/* Menu */}

@@ -1,17 +1,39 @@
+import { useState } from 'react'
 import Sidebar from '../components/sidebar'
 import { patients, doctors, appointments, recentActivity, stats } from '../data/mockData'
-import { Users, Calendar, Clock, Stethoscope  } from 'lucide-react'
+import { Users, Calendar, Clock, Stethoscope, Menu, X } from 'lucide-react'
 import Dashboardheader from '../components/dashboardheader'
 import MedicalShapesBackground from '../components/MedicalShapesBackground'
 
 const dashboard = () => {
+  const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
     <div className="flex min-h-screen bg-gray-50 relative">
       <MedicalShapesBackground />
-      <Sidebar />
       
-      <div className="flex-1 ml-64">
+      {/* Mobile Menu Button */}
+      <button 
+        onClick={() => setSidebarOpen(!sidebarOpen)}
+        className="lg:hidden fixed top-4 left-4 z-50 p-2 bg-[#09637E] text-white rounded-lg shadow-lg"
+      >
+        {sidebarOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+      </button>
+
+      {/* Sidebar */}
+      <div className={`fixed inset-y-0 left-0 z-40 transform ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0 transition-transform duration-300`}>
+        <Sidebar onClose={() => setSidebarOpen(false)} />
+      </div>
+      
+      {/* Overlay for mobile */}
+      {sidebarOpen && (
+        <div 
+          className="lg:hidden fixed inset-0 z-30 bg-black/50"
+          onClick={() => setSidebarOpen(false)}
+        />
+      )}
+      
+      <div className="flex-1 lg:ml-64 w-full pt-16 lg:pt-0">
         {/* Header */}
         <Dashboardheader />
 

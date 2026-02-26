@@ -12,7 +12,7 @@ const SignIn = () => {
       <Link to="/" className="absolute top-6 left-6 z-20 flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-full text-[#09637E] font-medium shadow-sm hover:shadow-md hover:border-[#09637E] transition-all duration-300">
         <ArrowLeft className="w-4 h-4" /> Back
       </Link>
-      <div className="max-w-md w-full bg-white rounded-xl shadow-lg p-8 relative z-10">
+      <div className="max-w-md w-full bg-white rounded-xl shadow-lg p-6 sm:p-8 relative z-10">
         <div className="text-center mb-8">
           <h2 className="text-2xl font-bold text-gray-900">Welcome Back</h2>
           <p className="text-gray-600 mt-2">Sign in to your account</p>

@@ -21,7 +21,7 @@ const BookAppointment = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white shadow py-12 px-4 relative">
+    <div className="min-h-screen bg-white shadow py-8 sm:py-12 px-4 relative">
       <MedicalShapesBackground />
       <Link to="/" className="absolute top-6 left-6 z-20 flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-full text-[#09637E] font-medium shadow-sm hover:shadow-md hover:border-[#09637E] transition-all duration-300">
         <ArrowLeft className="w-4 h-4" /> Back
@@ -30,8 +30,8 @@ const BookAppointment = () => {
       <div className="max-w-2xl mx-auto relative z-10">
         
 
-        <div className="bg-white rounded-xl shadow-lg p-8">
-          <div className="text-center mb-8">
+        <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8">
+          <div className="text-center mb-6 sm:mb-8">
           <h2 className="text-3xl font-bold text-gray-900">Book an Appointment</h2>
           <p className="text-gray-600 mt-2">Schedule your visit with our specialists</p>
         </div>
