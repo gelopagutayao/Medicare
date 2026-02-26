@@ -19,7 +19,7 @@ const Sidebar = () => {
       {/* Logo */}
       <div className="p-6 border-t border-white/10">
         <Link to="/" className="flex items-center gap-2">
-          <img src="/frontend/dist/LOGO.png" alt="Medicare" className="w-8 h-8" />
+          <img src="/LOGO.png" alt="Medicare" className="w-8 h-8" />
           <span className="text-2xl font-bold"><span>Medi</span>care.</span>
         </Link>
       </div>
