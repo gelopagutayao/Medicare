@@ -22,7 +22,7 @@ const SignUp = () => {
           </Link>
 
           {/* LEFT SIDE IMAGE */}
-          <div className="relative w-full lg:w-1/2 flex justify-center">
+          <div className="relative w-full lg:w-1/2 flex justify-center ml-auto">
             <img
               src="/hero1.png"
               alt="Doctor"

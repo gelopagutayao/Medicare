@@ -12,7 +12,7 @@ const Heropage = () => {
         <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-6">
           
           {/* LEFT SIDE */}
-          <div className="relative w-full lg:w-1/2 flex justify-center">
+          <div className="relative w-full lg:w-1/2 flex justify-center ml-auto">
             <img 
               src="/hero1.png" 
               alt="Doctor" 
