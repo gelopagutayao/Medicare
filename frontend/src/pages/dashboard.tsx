@@ -3,12 +3,14 @@ import Sidebar from '../components/sidebar'
 import { patients, doctors, appointments, recentActivity, stats, notifications } from '../data/mockData'
 import { Users, Calendar, Clock, Stethoscope  } from 'lucide-react'
 import Dashboardheader from '../components/dashboardheader'
+import MedicalShapesBackground from '../components/MedicalShapesBackground'
 
 const dashboard = () => {
   const [activeTab, setActiveTab] = useState('dashboard')
 
   return (
-    <div className="flex min-h-screen bg-gray-50">
+    <div className="flex min-h-screen bg-gray-50 relative">
+      <MedicalShapesBackground />
       <Sidebar />
       
       <div className="flex-1 ml-64">

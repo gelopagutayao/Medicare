@@ -2,11 +2,13 @@ import { Link } from 'react-router-dom';
 import { Star, ArrowRight } from "lucide-react";
 import stethoscope from '../assets/icons/stethoscope.png';
 import signature from '../assets/icons/signature.png';
+import MedicalShapesBackground from '../components/MedicalShapesBackground';
 
 const Heropage = () => {
   return (
-    <div className="min-h-[60vh] bg-white mt-1">
-      <section className="relative bg-white pt-12 pb-4">
+    <div className="min-h-[60vh] bg-white mt-1 relative">
+      <MedicalShapesBackground />
+      <section className="relative bg-transparent pt-12 pb-4 z-10">
         <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-6">
           
           {/* LEFT SIDE */}

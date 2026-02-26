@@ -1,14 +1,16 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Lock, Eye, EyeOff , Phone , ArrowLeft} from 'lucide-react';
+import MedicalShapesBackground from '../components/MedicalShapesBackground';
 
 const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className="min-h-[60vh] bg-white mt-1">
-      <section className="relative bg-white pt-12 pb-4">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-6">
+    <div className="min-h-[60vh] bg-white mt-1 relative">
+      <MedicalShapesBackground />
+      <section className="relative bg-transparent pt-12 pb-4 z-10">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-6 relative z-10">
         <Link to="/" className="absolute top-6 left-6 flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-full text-[#09637E] font-medium shadow-sm hover:shadow-md hover:border-[#09637E] transition-all duration-300">
         <ArrowLeft className="w-4 h-4" /> Back
         </Link>
